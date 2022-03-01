@@ -12,7 +12,10 @@
     "babel-preset-react": "*"
   },
   "homepage": "https://LargeSC.github.io/home-away",
+  
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "webpack",
     "watch": "webpack -w"
   }
